@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator App</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="bg-secondary d-flex justify-content-center align-items-center vh-100"
+  >
+    <div
+      class="main-translator p-4 d-flex flex-column bg-black rounded-3 align-items-center justify-content-evenly gap-3"
+    >
+      <div class="d-flex justify-content-center">
+        <h1 class="text-light bg-primary bg-opacity-25 rounded p-1">
+          Translator App
+        </h1>
+      </div>
+
+      <div
+        class="text-content d-flex justify-content-evenly align-items-center gap-3 flex-wrap"
+      >
+        <textarea
+          data-cls="from-text"
+          cols="20"
+          rows="10"
+          class="bg-secondary bg-opacity-75 ps-1 text-light rounded fw-bold border border-2 border-opacity-50 border-light"
+        ></textarea>
+
+        <textarea
+          data-cls="to-text"
+          disabled
+          cols="20"
+          rows="10"
+          class="bg-secondary bg-opacity-25 ps-1 text-light rounded fw-bold border border-2 border-opacity-50 border-light"
+        ></textarea>
+      </div>
+
+      <div
+        class="language-content d-flex justify-content-around align-items-center gap-5 w-100"
+      >
+        <select
+          data-cls="select-from"
+          class="bg-dark text-light rounded p-1"
+        ></select>
+
+        <select
+          data-cls="select-to"
+          class="bg-dark text-light rounded p-1"
+        ></select>
+      </div>
+
+      <div
+        class="translate-btn d-flex justify-content-center align-items-center"
+      >
+        <button
+          data-cls="translate-btn"
+          class="btn btn-outline-primary translate-result"
+        >
+          Translate
+        </button>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script src="/js/translator-data.txt"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
